@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.1.65:3306/bugmanagement</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <mapping class="com.sicd.bugmanagement.common.bean.TestCase" />
+        <mapping class="com.sicd.bugmanagement.common.bean.AuthorityRole" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Authority" />
+        <mapping class="com.sicd.bugmanagement.common.bean.BugTemplate" />
+        <mapping class="com.sicd.bugmanagement.common.bean.OperateLog" />
+        <mapping class="com.sicd.bugmanagement.common.bean.History" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Step" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Task" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Version" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Vote" />
+        <mapping class="com.sicd.bugmanagement.common.bean.MailTemplate" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Exception" />
+        <mapping class="com.sicd.bugmanagement.common.bean.ExcludeException" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Tester" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Project" />
+        <mapping class="com.sicd.bugmanagement.common.bean.User" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Department" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Dictionary" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Developer" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Resource" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Role" />
+        <mapping class="com.sicd.bugmanagement.common.bean.ExceptionRecord" />
+        <mapping class="com.sicd.bugmanagement.common.bean.AffectedVersion" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Answer" />
+        <mapping class="com.sicd.bugmanagement.common.bean.UserRole" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Company" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Bug" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Module" />
+        <mapping class="com.sicd.bugmanagement.common.bean.UserCase" />
+        <mapping class="com.sicd.bugmanagement.common.bean.Question" />
+    </session-factory>
+</hibernate-configuration>
